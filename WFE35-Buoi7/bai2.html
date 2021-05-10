@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet.</p>
+	<button id="bai">bai1</button>
+
+	<h1>The H1 hover</h1>
+	<input type="text" name="" id="inputText">
+	<script type="text/javascript">
+		var bai = document.getElementById("bai");
+		bai.addEventListener('click', function(){
+			document.getElementsByTagName("p")[0].style.color = "red";
+		});
+
+		var h1 = document.getElementsByTagName("h1")[0];
+		h1.addEventListener("mouseover", function(){
+			h1.style.color = "red";
+		});
+		h1.addEventListener("mouseout", function(){
+			h1.style.color = "black";
+		});
+
+		var inputText = document.getElementById("inputText");
+		inputText.addEventListener("blur", function(){
+			inputText.style.backgroundColor = "pink";
+		});
+		inputText.addEventListener("focus", function(){
+			inputText.style.backgroundColor = "yellow";
+		});
+	</script>
+</body>
+</html>

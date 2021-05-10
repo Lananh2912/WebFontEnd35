@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#menu{
+	background-color: #31B404;
+	width: 100%;
+	height: 40px;
+}
+#menu > li{
+	list-style-type: none;
+	float: left;
+	line-height: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.menucon{
+	display: none;
+	position: absolute;
+	background-color: #64FE2E;
+	left: 0;
+	width: 200px;
+}
+.menucon > li{
+	list-style: none;
+	border-bottom: 1px solid #FFFFFF;
+}
+#menu > li:hover .menucon{
+	display: block;
+}

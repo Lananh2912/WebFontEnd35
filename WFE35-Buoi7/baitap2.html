@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+		}
+		div{
+			margin-left: 50px;
+		}
+		form{
+			border: 1px solid black;
+			width: 50%;
+			position: relative;
+		}
+		input{
+			width: 10%;
+			float: left;
+			border-right: 1px solid black;
+			margin: 10px;
+		}
+		p{
+			border: 1px solid black;
+			margin: 0;
+			padding-left: 100px;
+			height: 40px;
+    		line-height: 30px;
+    		background-color: #f6f7fe;
+		}
+		hr{
+			height: 338px;
+		    width: 1px;
+		    background-color: black;
+		    margin: 80px;
+		    position: relative;
+		    z-index: 1;
+		    top: -419px;	
+		}
+		p:hover{
+			background-color: #4caf50;
+		}
+		button{
+			position: relative;
+			z-index: 1;
+    		top: -450px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<form action="">
+			<input type="checkbox" name="check"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<input type="checkbox" name="check"><p>Lorem ipsum dolor sit, amet consectetur, adipisicing.</p>
+			<input type="checkbox" name="check"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<input type="checkbox" name="check"><p>Lorem, ipsum dolor.</p>
+			<input type="checkbox" name="check"><p>Lorem ipsum dolor sit amet.</p>
+			<input type="checkbox" name="check"><p>Lorem ipsum dolor sit amet consectetur.</p>
+			<input type="checkbox" name="check"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<input type="checkbox" name="check"><p>Lorem, ipsum dolor sit amet consectetur.</p>
+		</form>
+		<hr>
+		<button>Check All</button>
+		<button>Uncheck All</button>
+
+	</div>
+
+	<script type="text/javascript">
+		var button = document.getElementsByTagName("button")[0];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[0].checked="true";
+		})
+		var button = document.getElementsByTagName("button")[0];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[1].checked="true";
+		})
+		var button = document.getElementsByTagName("button")[0];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[2].checked="true";
+		})
+		var button = document.getElementsByTagName("button")[0];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[3].checked="true";
+		})
+		var button = document.getElementsByTagName("button")[0];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[4].checked="true";
+		})
+		var button = document.getElementsByTagName("button")[0];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[5].checked="true";
+		})
+		var button = document.getElementsByTagName("button")[0];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[6].checked="true";
+		})
+		var button = document.getElementsByTagName("button")[0];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[7].checked="true";
+		})
+
+
+
+		var button = document.getElementsByTagName("button")[1];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[0].checked="";
+		})
+		var button = document.getElementsByTagName("button")[1];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[1].checked="";
+		})
+		var button = document.getElementsByTagName("button")[1];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[2].checked="";
+		})
+		var button = document.getElementsByTagName("button")[1];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[3].checked="";
+		})
+		var button = document.getElementsByTagName("button")[1];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[4].checked="";
+		})
+		var button = document.getElementsByTagName("button")[1];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[5].checked="";
+		})
+		var button = document.getElementsByTagName("button")[1];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[6].checked="";
+		})
+		var button = document.getElementsByTagName("button")[1];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("form")[0].check[7].checked="";
+		})
+
+	</script>
+	
+</body>
+</html>

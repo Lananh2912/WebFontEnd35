@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div{
+			border: 1px solid black;
+			width: 30%;
+			height: 100px;
+			padding: 10px 30px;
+		}
+		button{
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h4>Cỡ chữ</h4>
+		<button>Mặc định</button>
+		<button>Vừa</button>
+		<button>Nhỏ</button>
+	</div>
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Voluptate at quibusdam iste quo consequuntur quae odio molestias facilis. Architecto a magni, ullam, veniam placeat, illo numquam dignissimos officiis mollitia qui quod officia consequuntur quaerat rem, cum vero explicabo reprehenderit facilis harum nobis sequi omnis aperiam est! Assumenda architecto possimus, praesentium?</p>
+
+	<script type="text/javascript">
+		var button = document.getElementsByTagName("button")[0];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("p")[0].style.fontSize ="16px";
+		})
+		var button = document.getElementsByTagName("button")[1];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("p")[0].style.fontSize ="22.4px";
+		})
+		var button = document.getElementsByTagName("button")[2];
+		button.addEventListener('click', function(){
+			document.getElementsByTagName("p")[0].style.fontSize ="10px";
+		})
+	</script>
+	
+</body>
+</html>

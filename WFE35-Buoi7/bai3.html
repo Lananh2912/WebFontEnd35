@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<select id="test">
+		<option value="HN">ha noi</option>
+		<option value="HP">hai phong</option>
+	</select>
+
+	<script type="text/javascript">
+		var test = document.getElementById("test");
+		test.addEventListener("change", function(){
+			console.log(test.value);
+		})
+	</script>
+</body>
+</html>

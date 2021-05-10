@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#menu{
+	background-color: #78b43d;
+	width: 100%;
+	height: 45px;
+}
+#menu >li{
+	list-style-type: none;
+	float: left;
+	line-height: 35px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.menucon{
+	display: none;
+	position: absolute;
+	background-color: #9FF781;
+	left: 0;
+	width: 200px;
+}
+.menucon >li{
+	list-style: none;
+	border-bottom:1px solid #78b43d;
+}
+#menu > li:hover .menucon{
+	display: block;
+}
+.menucon: li:hover{
+	background-color: #78b43d;
+}
+.menuchau{
+	list-style-type: none;
+	float: inherit;
+	position: absolute;
+	background-color: #78b34d;
+	width: 200px;
